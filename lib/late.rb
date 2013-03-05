@@ -1,5 +1,6 @@
 require "late/version"
+require "late/late"
 
-module Late
+class Late
   # Your code goes here...
 end
