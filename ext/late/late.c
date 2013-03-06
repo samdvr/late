@@ -7,7 +7,7 @@ const VALUE late_httpdate(VALUE self, VALUE rb_epoch) {
   struct tm * timeinfo;
   char buffer[80];
   timeinfo = gmtime(&epoch);
-  strftime(buffer, 80, "%a, %d %b %Y %H:%M:%S %Z", timeinfo);
+  strftime(buffer, 80, "%a, %d %b %Y %H:%M:%S GMT", timeinfo);
   return rb_str_new2(buffer);
 }
 
