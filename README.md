@@ -37,18 +37,21 @@ Epoch to DateTime with default format
 
 ```
 Late.httpdate(Time.now.to_i)
-=> "Mon, 29 Jun 2015 04:47:33 GMT"```
+=> "Mon, 29 Jun 2015 04:47:33 GMT"
+```
 
 Epoch to DateTime with custom format
 
 ```
 Late.pp(Time.now.to_i,"%a, %d %b %Y GMT")
-=> "Mon, 29 Jun 2015 GMT"```
+=> "Mon, 29 Jun 2015 GMT"
+```
 
 Current DateTime in epoch
 ```
 Late.epoch
-=> 1435536000```
+=> 1435536000
+```
 
 ## Contributing
 
